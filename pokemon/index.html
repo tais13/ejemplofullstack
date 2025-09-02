@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Cards Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pokémon Cards Store</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalogo">
+      <article>
+        <img src="images/pikachu-card.jpg" alt="Pikachu">
+        <h3>Pikachu</h3>
+        <p>$5.000</p>
+        <input type="number" id="cantidadPikachu" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Pikachu', 5000, document.getElementById('cantidadPikachu').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/charizard-card.jpg" alt="Charizard">
+        <h3>Charizard</h3>
+        <p>$25.000</p>
+        <input type="number" id="cantidadCharizard" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Charizard', 25000, document.getElementById('cantidadCharizard').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/mewtwo-card.jpg" alt="Mewtwo">
+        <h3>Mewtwo</h3>
+        <p>$15.000</p>
+        <input type="number" id="cantidadMewtwo" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Mewtwo', 15000, document.getElementById('cantidadMewtwo').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/bulbasaur-card.jpg" alt="Bulbasaur">
+        <h3>Bulbasaur</h3>
+        <p>$4.000</p>
+        <input type="number" id="cantidadBulbasaur" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Bulbasaur', 4000, document.getElementById('cantidadBulbasaur').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/squirtle-card.jpg" alt="Squirtle">
+        <h3>Squirtle</h3>
+        <p>$4.500</p>
+        <input type="number" id="cantidadSquirtle" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Squirtle', 4500, document.getElementById('cantidadSquirtle').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/gengar-card.jpg" alt="Gengar">
+        <h3>Gengar</h3>
+        <p>$12.000</p>
+        <input type="number" id="cantidadGengar" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Gengar', 12000, document.getElementById('cantidadGengar').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/snorlax-card.jpg" alt="Snorlax">
+        <h3>Snorlax</h3>
+        <p>$10.000</p>
+        <input type="number" id="cantidadSnorlax" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Snorlax', 10000, document.getElementById('cantidadSnorlax').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/eevee-card.jpg" alt="Eevee">
+        <h3>Eevee</h3>
+        <p>$6.000</p>
+        <input type="number" id="cantidadEevee" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Eevee', 6000, document.getElementById('cantidadEevee').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/jigglypuff-card.jpg" alt="Jigglypuff">
+        <h3>Jigglypuff</h3>
+        <p>$3.500</p>
+        <input type="number" id="cantidadJigglypuff" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Jigglypuff', 3500, document.getElementById('cantidadJigglypuff').value)">Añadir</button>
+      </article>
+
+      <article>
+        <img src="images/dragonite-card.jpg" alt="Dragonite">
+        <h3>Dragonite</h3>
+        <p>$20.000</p>
+        <input type="number" id="cantidadDragonite" min="1" max="50" value="1">
+        <button onclick="agregarCarrito('Dragonite', 20000, document.getElementById('cantidadDragonite').value)">Añadir</button>
+      </article>
+    </section>
+
+    <section class="promo">
+      <h2>¡Atrápalos ya!</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rg6CiPI6h2g" 
+        title="Pokémon Opening" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pokémon Cards Store | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
